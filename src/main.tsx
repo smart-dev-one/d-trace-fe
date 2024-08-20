@@ -4,6 +4,7 @@ import App from './App.tsx';
 import { ThemeProvider } from '@mui/material';
 import { theme } from './utils/theme.ts';
 import './global.css';
+
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>

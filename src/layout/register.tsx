@@ -1,4 +1,4 @@
-import { Card, Navbar, Sidebar } from '@/components';
+import { Navbar, Sidebar } from '@/components';
 import { Box } from '@mui/material';
 import { Outlet } from 'react-router-dom';
 

@@ -76,7 +76,7 @@ export const ForgotPassword = () => {
         <Formik
           initialValues={initialValues}
           validationSchema={validationSchema}
-          onSubmit={(values, { setSubmitting }) => {
+          onSubmit={(_, { setSubmitting }) => {
             sendCode();
             setSubmitting(false);
           }}

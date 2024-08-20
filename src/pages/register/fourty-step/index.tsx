@@ -1,17 +1,15 @@
+import { Stack } from '@mui/material';
 import {
   Accordion,
   Box,
   Button,
   IconButton,
-  Input,
   Stepper,
   Text,
 } from '@smart-dev-one/smart-ui';
 import { ArrowLeft, ArrowRight, InfoIcon, X } from 'lucide-react';
-import { Link } from 'react-router-dom';
 import { useState } from 'react';
-import { Stack } from '@mui/material';
-import { inputStyle } from '@/utils/style';
+import { Link } from 'react-router-dom';
 
 export const FinishStepRegisterModule = () => {
   const [expanded, setExpanded] = useState<string | false>(false);
@@ -39,15 +37,8 @@ export const FinishStepRegisterModule = () => {
           justifyContent: 'space-between',
         }}
       >
-        <Stepper
-          title="Finalizar Cadastro"
-          max={4}
-          step={4}
-        />
-        <IconButton
-          icon={<X size={24} />}
-          onClick={() => {}}
-        />
+        <Stepper title="Finalizar Cadastro" max={4} step={4} />
+        <IconButton icon={<X size={24} />} onClick={() => {}} />
       </Box>
 
       <Box sx={{ flex: 1, flexDirection: 'column', display: 'flex' }}>
@@ -59,10 +50,7 @@ export const FinishStepRegisterModule = () => {
         >
           <IconButton
             size="medium"
-            icon={<InfoIcon
-              size={28}
-              color="#5F5F5F"
-            />}
+            icon={<InfoIcon size={28} color="#5F5F5F" />}
             tooltip="It is a long established fact that a reader will be distracted by the readable content."
           />
         </Box>
@@ -79,12 +67,7 @@ export const FinishStepRegisterModule = () => {
             direction={{ xs: 'column', sm: 'column', md: 'row' }}
             spacing={{ xs: 1, sm: 2, md: 4 }}
           >
-            <Box
-              flex={1}
-              flexWrap="wrap"
-              display="flex"
-              rowGap="25px"
-            >
+            <Box flex={1} flexWrap="wrap" display="flex" rowGap="25px">
               <Box
                 flexDirection="column"
                 rowGap="6px"
@@ -93,16 +76,10 @@ export const FinishStepRegisterModule = () => {
                 alignItems="start"
                 justifyContent="center"
               >
-                <Text
-                  fontSize="20px"
-                  fontWeight={600}
-                >
+                <Text fontSize="20px" fontWeight={600}>
                   Nome do cliente
                 </Text>
-                <Text
-                  fontSize="18px"
-                  fontWeight={400}
-                >
+                <Text fontSize="18px" fontWeight={400}>
                   Google
                 </Text>
               </Box>
@@ -115,27 +92,16 @@ export const FinishStepRegisterModule = () => {
                 alignItems="start"
                 justifyContent="center"
               >
-                <Text
-                  fontSize="20px"
-                  fontWeight={600}
-                >
+                <Text fontSize="20px" fontWeight={600}>
                   Cidade
                 </Text>
-                <Text
-                  fontSize="18px"
-                  fontWeight={400}
-                >
+                <Text fontSize="18px" fontWeight={400}>
                   California
                 </Text>
               </Box>
             </Box>
 
-            <Box
-              flex={1}
-              flexWrap="wrap"
-              display="flex"
-              rowGap="25px"
-            >
+            <Box flex={1} flexWrap="wrap" display="flex" rowGap="25px">
               <Box
                 flexDirection="column"
                 rowGap="6px"
@@ -144,16 +110,10 @@ export const FinishStepRegisterModule = () => {
                 alignItems="start"
                 justifyContent="center"
               >
-                <Text
-                  fontSize="20px"
-                  fontWeight={600}
-                >
+                <Text fontSize="20px" fontWeight={600}>
                   País
                 </Text>
-                <Text
-                  fontSize="18px"
-                  fontWeight={400}
-                >
+                <Text fontSize="18px" fontWeight={400}>
                   Estados Unidos da América
                 </Text>
               </Box>
@@ -166,27 +126,16 @@ export const FinishStepRegisterModule = () => {
                 alignItems="start"
                 justifyContent="center"
               >
-                <Text
-                  fontSize="20px"
-                  fontWeight={600}
-                >
+                <Text fontSize="20px" fontWeight={600}>
                   Planta
                 </Text>
-                <Text
-                  fontSize="18px"
-                  fontWeight={400}
-                >
+                <Text fontSize="18px" fontWeight={400}>
                   Mountain
                 </Text>
               </Box>
             </Box>
 
-            <Box
-              flex={1}
-              flexWrap="wrap"
-              display="flex"
-              rowGap="25px"
-            >
+            <Box flex={1} flexWrap="wrap" display="flex" rowGap="25px">
               <Box
                 flexDirection="column"
                 rowGap="6px"
@@ -195,16 +144,10 @@ export const FinishStepRegisterModule = () => {
                 alignItems="start"
                 justifyContent="center"
               >
-                <Text
-                  fontSize="20px"
-                  fontWeight={600}
-                >
+                <Text fontSize="20px" fontWeight={600}>
                   Setor
                 </Text>
-                <Text
-                  fontSize="18px"
-                  fontWeight={400}
-                >
+                <Text fontSize="18px" fontWeight={400}>
                   Vendas / Marketing
                 </Text>
               </Box>
@@ -229,17 +172,9 @@ export const FinishStepRegisterModule = () => {
         </Accordion>
       </Box>
 
-      <Box
-        display="flex"
-        justifyContent="space-between"
-      >
+      <Box display="flex" justifyContent="space-between">
         <Link to="/modules/register/3">
-          <Button
-            startIcon={<ArrowLeft
-              size={24}
-              color="#5F5F5F"
-            />}
-          >
+          <Button startIcon={<ArrowLeft size={24} color="#5F5F5F" />}>
             Anterior
           </Button>
         </Link>
@@ -247,10 +182,7 @@ export const FinishStepRegisterModule = () => {
         <Link to="/modules/list">
           <Button
             variantStyle="secondary"
-            startIcon={<ArrowRight
-              size={24}
-              color="#5F5F5F"
-            />}
+            startIcon={<ArrowRight size={24} color="#5F5F5F" />}
           >
             Próximo
           </Button>

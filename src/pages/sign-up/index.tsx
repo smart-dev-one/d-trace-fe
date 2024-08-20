@@ -46,10 +46,7 @@ export const SignUp = () => {
             alignItems="center"
             justifyContent="center"
           >
-            <Text
-              fontSize="30px"
-              fontWeight={600}
-            >
+            <Text fontSize="30px" fontWeight={600}>
               Cadastro realizado com sucesso!
             </Text>
 
@@ -59,20 +56,14 @@ export const SignUp = () => {
               }}
               onClick={goTo}
               variantStyle="secondary"
-              startIcon={<Check
-                color="#5f5f5f"
-                size={20}
-              />}
+              startIcon={<Check color="#5f5f5f" size={20} />}
             >
               Ir para o dashboard
             </Button>
           </Box>
         ) : (
           <>
-            <Text
-              fontWeight={600}
-              fontSize="30px"
-            >
+            <Text fontWeight={600} fontSize="30px">
               Criar conta
             </Text>
 
@@ -87,7 +78,6 @@ export const SignUp = () => {
                     : 'Validar email'
               }
             />
-
             {showStep === 0 ? (
               <>
                 <Box
@@ -303,23 +293,13 @@ export const SignUp = () => {
                       sx={{ height: '50px' }}
                       onClick={() => alert('Disparar e-mail')}
                     >
-                      <RotateCw
-                        color="#155E99"
-                        size={20}
-                      />
+                      <RotateCw color="#155E99" size={20} />
                     </Button>
                   </Box>
                 </Box>
 
-                <Box
-                  component="div"
-                  display="flex"
-                  flexDirection="column"
-                >
-                  <Text
-                    fontSize={14}
-                    fontWeight={500}
-                  >
+                <Box component="div" display="flex" flexDirection="column">
+                  <Text fontSize={14} fontWeight={500}>
                     Reenviar código em 50s
                   </Text>
                 </Box>
@@ -327,36 +307,24 @@ export const SignUp = () => {
             )}
 
             {showStep === 0 ? (
-              <Box
-                display="flex"
-                justifyContent="flex-end"
-              >
+              <Box display="flex" justifyContent="flex-end">
                 <Button
                   variantStyle="secondary"
                   size="large"
                   onClick={() => setShowStep(prev => prev + 1)}
                   sx={{ width: '20%' }}
-                  startIcon={<ArrowRight
-                    color="#5f5f5f"
-                    size={20}
-                  />}
+                  startIcon={<ArrowRight color="#5f5f5f" size={20} />}
                 >
                   Próximo
                 </Button>
               </Box>
             ) : showStep === 1 ? (
-              <Box
-                display="flex"
-                justifyContent="space-between"
-              >
+              <Box display="flex" justifyContent="space-between">
                 <Button
                   size="large"
                   onClick={() => setShowStep(prev => prev - 1)}
                   sx={{ width: '20%' }}
-                  startIcon={<ArrowLeft
-                    color="#5f5f5f"
-                    size={20}
-                  />}
+                  startIcon={<ArrowLeft color="#5f5f5f" size={20} />}
                 >
                   Anterior
                 </Button>
@@ -365,27 +333,18 @@ export const SignUp = () => {
                   size="large"
                   onClick={() => setShowStep(prev => prev + 1)}
                   sx={{ width: '20%' }}
-                  startIcon={<ArrowRight
-                    color="#5f5f5f"
-                    size={20}
-                  />}
+                  startIcon={<ArrowRight color="#5f5f5f" size={20} />}
                 >
                   Próximo
                 </Button>
               </Box>
             ) : (
-              <Box
-                display="flex"
-                justifyContent="space-between"
-              >
+              <Box display="flex" justifyContent="space-between">
                 <Button
                   size="large"
                   onClick={() => setShowStep(prev => prev - 1)}
                   sx={{ width: '20%' }}
-                  startIcon={<ArrowLeft
-                    color="#5f5f5f"
-                    size={20}
-                  />}
+                  startIcon={<ArrowLeft color="#5f5f5f" size={20} />}
                 >
                   Anterior
                 </Button>
@@ -394,10 +353,7 @@ export const SignUp = () => {
                   size="large"
                   sx={{ width: '20%' }}
                   onClick={() => setShowStep(prev => prev + 1)}
-                  startIcon={<Check
-                    color="#5f5f5f"
-                    size={20}
-                  />}
+                  startIcon={<Check color="#5f5f5f" size={20} />}
                 >
                   Cadastrar
                 </Button>
@@ -448,11 +404,7 @@ export const SignUp = () => {
                 justifyContent: 'flex-start',
               }}
             >
-              <img
-                style={{ width: '25%' }}
-                src={dTrace}
-                alt="D-trace"
-              />
+              <img style={{ width: '25%' }} src={dTrace} alt="D-trace" />
             </Box>
 
             <Text
